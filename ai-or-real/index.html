@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can AI fool you? Take a test</title>
+    <base href="/ai-or-real/">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container" id="img-container"></div>
+        <div class="button-container">
+            <button class="ai-btn" id="ai-btn">AI</button>
+            <button class="real-btn" id="real-btn">Real</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+    <script>
+        const imgList = [
+            {
+                'id': 1,
+                'type': 0,
+                'url': 'https://i.redd.it/4dbke6ty493b1.png',
+            },
+            {
+                'id': 2,
+                'type': 1,
+                'url': 'https://media.discordapp.net/attachments/681785433620873216/1113867171194486864/OIP.png',
+            },
+            {
+                'id': 3,
+                'type': 0,
+                'url': 'https://i.redd.it/ghf6dxynj12b1.png',
+            }
+        ]
+        const imgContainer = document.querySelector('#img-container')
+        const aiBtn = document.querySelector('#ai-btn')
+        const realBtn = document.querySelector('#real-btn')
+
+        let selectedIds = []
+        let filteredList = imgList.filter(img => !selectedIds.includes(img.id))
+        let selectedImg = filteredList[Math.floor(Math.random() * filteredList.length)]
+        selectedIds.push(selectedImg.id)
+
+        imgContainer.style.backgroundImage = `url('${selectedImg.url}')`
+
+        aiBtn.addEventListener('click', () => {
+            if (selectedImg.type === 0) {
+                alert('Correct')
+            } else {
+                alert('Incorrect')
+            }
+            putNewImg()
+        })
+
+        realBtn.addEventListener('click', () => {
+            if (selectedImg.type === 1) {
+                alert('Correct')
+            } else {
+                alert('Incorrect')
+            }
+            putNewImg()
+        })
+
+        function putNewImg() {
+            if (selectedIds.length === imgList.length) selectedIds = []
+            filteredList = imgList.filter(img => !selectedIds.includes(img.id))
+            selectedImg = filteredList[Math.floor(Math.random() * filteredList.length)]
+            selectedIds.push(selectedImg.id)
+            imgContainer.style.backgroundImage = `url('${selectedImg.url}')`
+        }
+    </script>
+</body>
+
+</html>

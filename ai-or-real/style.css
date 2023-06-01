@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(157, 175, 177, 1) 0%, rgba(130, 103, 152, 1) 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    background: transparent;
+    aspect-ratio: 3/4;
+    width: 20rem;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-btn {
+    width: 10rem;
+    height: 4rem;
+    margin: 1rem;
+    background-color: rgb(238, 96, 96);
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.ai-btn:hover {
+    background: rgb(241, 77, 77);
+    box-shadow: .7rem .7rem 0 black;
+    transform: translate(-0.2rem, -0.2rem);
+}
+
+.real-btn {
+    width: 10rem;
+    height: 4rem;
+    margin: 1rem;
+    background-color: rgb(96, 117, 238);
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.real-btn:hover {
+    background-color: rgb(73, 98, 239);
+    box-shadow: .7rem .7rem 0 black;
+    transform: translate(-0.2rem, -0.2rem);
+}
