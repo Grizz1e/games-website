@@ -2,37 +2,37 @@ const imgList = [
     {
         'id': 1,
         'type': 0,
-        'url': 'https://cdn.discordapp.com/attachments/1113999040321962014/1113999581231976478/4dbke6ty493b1.png',
+        'url': 'https://cdn.discordapp.com/attachments/1113999040321962014/1113999581231976478/4dbke6ty493b1.png?ex=677345f5',
     },
     {
         'id': 2,
         'type': 1,
-        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1113999332723667004/OIP.png',
+        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1113999332723667004/OIP.png?ex=677345ba',
     },
     {
         'id': 3,
         'type': 0,
-        'url': 'https://cdn.discordapp.com/attachments/1113999040321962014/1113999136845463552/ghf6dxynj12b1.png',
+        'url': 'https://media.discordapp.net/attachments/1113999040321962014/1113999136845463552/ghf6dxynj12b1.png?ex=6773458b',
     },
     {
         'id': 4,
         'type': 1,
-        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1114000341881589801/woman-590490_960_720.jpg'
+        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1114000341881589801/woman-590490_960_720.jpg?ex=677346aa'
     },
     {
         'id': 5,
         'type': 0,
-        'url': 'https://cdn.discordapp.com/attachments/1113999040321962014/1114000969164926996/n80c3oeghf3b1.png',
+        'url': 'https://cdn.discordapp.com/attachments/1113999040321962014/1114000969164926996/n80c3oeghf3b1.png?ex=67734740',
     },
     {
         'id': 6,
         'type': 1,
-        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1114007406645620746/Untitled.jpg',
+        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1114007406645620746/Untitled.jpg?ex=67734d3f',
     },
     {
         'id': 7,
         'type': 1,
-        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1114008989458518066/Untitled.jpg',
+        'url': 'https://cdn.discordapp.com/attachments/1113999068545425509/1114008989458518066/Untitled.jpg?ex=67734eb8',
     }
 ]
 const imgContainer = document.querySelector('#img-container')
